@@ -1,0 +1,5 @@
+Paste==3.5.0
+repoze.lru==0.7
+Routes==2.4.1
+six==1.15.0
+WebOb==1.8.6
