@@ -1,11 +1,7 @@
-import sys
-from paste.cascade import Cascade
 from ps_router import RouterApp
-from paste.urlparser import StaticURLParser
 
 def make_app(mode):
     service_app = RouterApp(mode)
-
     service_app.add_route("/user/signup", 'UserApp', 'signup')
     service_app.add_route("/user/login", 'UserApp', 'login')
     return service_app

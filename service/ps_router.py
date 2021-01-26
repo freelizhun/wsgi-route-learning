@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 from webob import Request, Response
-from webob import exc
-
 from routes import Mapper
 from ps_middleware import middleware_factory
 
