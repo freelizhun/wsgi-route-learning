@@ -25,6 +25,7 @@ class RouterApp:
                 body = '<h1>Hello, %s!</h1>' % (result or 'web')
                 return [body.encode('utf-8')]
 
+#可以参考https://routes.readthedocs.io/en/latest/index.html
     def add_route(self, pat, mid, han):
         if mid not in self.__routing_table: # middleware being SINGELTON
             self.__routing_table[mid] = middleware_factory(mid,self.mode)
