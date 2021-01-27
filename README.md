@@ -13,7 +13,7 @@ $ virtualenv venv
 
 $ source venv/bin/activate
 
-$ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple requirements.txt 
+$ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt 
 ```
 ### 用uwsgi从后台启动并写入到日志文件
 ```bash
@@ -23,5 +23,6 @@ $ uwsgi --yaml uwsgi_test.yml --daemonize /tmp/my_uwsgi.log
 ### 关闭与重启uwsgi
 ```bash
 $ uwsgi --stop uwsgi/uwsgi.pid
+
 $ uwsgi --reload uwsgi/uwsgi.pid
 ```
